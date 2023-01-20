@@ -75,7 +75,7 @@ section {
   margin-bottom: 15px;
 }
 .container .form-body .country-list .country-row input {
-  background-color: #ECECEC;
+  background-color: #ececec;
   width: 20px;
   height: 20px;
   border-radius: 8px;
@@ -90,6 +90,22 @@ section {
   color: #343434;
   margin-left: 5px;
   text-transform: capitalize;
+}
+.container .form-footer {
+  border-top: 1px solid #ececec;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: right;
+}
+.container .form-footer button {
+  width: 87px;
+  height: 38px;
+  background: #60d09b;
+  border-radius: 50px;
+  border: none;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
 }
 
 .switch {
@@ -158,6 +174,9 @@ input:checked + .slider:before {
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -189,7 +208,7 @@ input:checked + .slider:before {
 /* On mouse-over, add a grey background color */
 /* When the checkbox is checked, add a blue background */
 .country-box input:checked ~ .checkmark {
-  background-color: #457DF1;
+  background-color: #457df1;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
