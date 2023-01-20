@@ -1,265 +1,259 @@
 @font-face {
-  font-family: "CamptonBook";
-  src: url(fonts/CamptonBook.otf) format("opentype");
+    font-family: "CamptonBook";
+    src: url("../fonts/CamptonMedium.otf");
 }
 @font-face {
-  font-family: "Campton";
-  src: url(fonts/CamptonMedium.otf) format("opentype");
-  font-weight: 500;
+    font-family: "CamptonBook-semibold";
+    src: url("../fonts/CamptonBook.otf");
 }
-@font-face {
-  font-family: "Campton";
-  src: url(fonts/CamptonSemiBold.otf) format("opentype");
-  font-weight: 600;
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Campton", sans-serif;
-  font-style: normal;
-  font-weight: 475;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "CamptonBook";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
 }
 
 section {
-  width: 100%;
-  margin-top: 50px;
+    width: 100%;
+    margin-top: 50px;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  position: relative;
-  width: 494px;
-  background: #ffffff;
-  border: 1px solid #e1e3e6;
-  box-shadow: 9px 32px 35px rgba(0, 0, 0, 0.0464653);
-  border-radius: 14px;
-  margin-left: auto;
-  margin-right: auto;
-  form {
-    width: 100%;
-    height: 100%;
-  }
-  // form header
-  .form-header {
-    width: 100%;
-    height: 35px;
-    input {
-      color: #343434;
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-bottom: 1px solid #ececec;
-      padding: 5px;
-      &:focus {
-        outline: none;
-      }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    width: 494px;
+    background: #ffffff;
+    border: 1px solid #e1e3e6;
+    box-shadow: 9px 32px 35px rgba(0, 0, 0, 0.0464653);
+    border-radius: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    form {
+        width: 100%;
+        height: 100%;
     }
-  }
-
-  // form body
-  .form-body {
-    .controller {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 15px auto;
-      .switch {
-        margin-right: 8px;
-      }
-      .select-controller {
-        display: flex;
-        align-items: center;
-
-        h6 {
-          font-weight: 600;
-          color: #232323;
-        }
-      }
-      p {
-        font-weight: 600;
-        color: #232323;
-      }
-    }
-    // country list
-    .country-list {
-      .country-row {
-        display: flex;
-        height: 22px;
-        margin-bottom: 15px;
+    // form header
+    .form-header {
+        width: 100%;
+        height: 35px;
         input {
-          background-color: #ececec;
-          width: 20px;
-          height: 20px;
-          border-radius: 8px;
-          &:checked {
-            background-color: green;
-          }
+            color: #343434;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-bottom: 1px solid #ececec;
+            padding: 5px;
+            font-family: "CamptonBook-semibold";
+            &:focus {
+                outline: none;
+            }
         }
+    }
 
-        p {
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 16px;
-          color: #343434;
-          margin-left: 5px;
-          text-transform: capitalize;
+    // form body
+    .form-body {
+        .controller {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px auto;
+            .switch {
+                margin-right: 8px;
+            }
+            .select-controller {
+                display: flex;
+                align-items: center;
+
+                h6 {
+                    font-weight: 550;
+                    color: #232323;
+                }
+            }
+            p {
+                font-weight: 550;
+                color: #232323;
+            }
         }
-      }
+        // country list
+        .country-list {
+            .country-row {
+                display: flex;
+                height: 22px;
+                margin-bottom: 15px;
+                input {
+                    background-color: #ececec;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 8px;
+                    &:checked {
+                        background-color: green;
+                    }
+                }
+
+                p {
+                    font-family: "CamptonBook-semibold";
+                    font-weight: 475;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #343434;
+                    margin-left: 5px;
+                    text-transform: capitalize;
+                }
+            }
+        }
     }
-  }
-  // form footer
-  .form-footer {
-    border-top: 1px solid #ececec;
-    padding-top: 20px;
-    padding-left: 20px;
-    text-align: right;
-    button {
-      width: 87px;
-      height: 38px;
-      background: #60d09b;
-      border-radius: 50px;
-      border: none;
-      text-transform: capitalize;
-      color: white;
-      cursor: pointer;
+    // form footer
+    .form-footer {
+        border-top: 1px solid #ececec;
+        padding-top: 20px;
+        padding-left: 20px;
+        text-align: right;
+        button {
+            width: 87px;
+            height: 38px;
+            background: #60d09b;
+            border-radius: 50px;
+            border: none;
+            text-transform: capitalize;
+            color: white;
+            cursor: pointer;
+        }
     }
-  }
 }
 
 // toggle switch -------------------
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 35px;
-  height: 18.5px;
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 18.5px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 17px;
-  width: 17px;
-  left: 1px;
-  bottom: 1px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+    background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 // custom checkbox
 /* The container */
 .country-box {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .country-box input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 22px;
-  width: 22px;
-  border-radius: 8px;
-  background-color: #ececec;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 8px;
+    background-color: #ececec;
 }
 
 /* On mouse-over, add a grey background color */
 /* When the checkbox is checked, add a blue background */
 .country-box input:checked ~ .checkmark {
-  background-color: #457df1;
+    background-color: #457df1;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 /* Show the checkmark when checked */
 .country-box input:checked ~ .checkmark:after {
-  display: block;
+    display: block;
 }
 
 /* Style the checkmark/indicator */
 .country-box .checkmark:after {
-  left: 8px;
-  top: 4px;
-  width: 3px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

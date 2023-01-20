@@ -1,24 +1,17 @@
 @font-face {
   font-family: "CamptonBook";
-  src: url(fonts/CamptonBook.otf) format("opentype");
+  src: url("../fonts/CamptonMedium.otf");
 }
 @font-face {
-  font-family: "Campton";
-  src: url(fonts/CamptonMedium.otf) format("opentype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Campton";
-  src: url(fonts/CamptonSemiBold.otf) format("opentype");
-  font-weight: 600;
+  font-family: "CamptonBook-semibold";
+  src: url("../fonts/CamptonBook.otf");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Campton", sans-serif;
+  font-family: "CamptonBook";
   font-style: normal;
-  font-weight: 475;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.5px;
@@ -58,6 +51,7 @@ section {
   border: none;
   border-bottom: 1px solid #ececec;
   padding: 5px;
+  font-family: "CamptonBook-semibold";
 }
 .container .form-header input:focus {
   outline: none;
@@ -76,11 +70,11 @@ section {
   align-items: center;
 }
 .container .form-body .controller .select-controller h6 {
-  font-weight: 600;
+  font-weight: 550;
   color: #232323;
 }
 .container .form-body .controller p {
-  font-weight: 600;
+  font-weight: 550;
   color: #232323;
 }
 .container .form-body .country-list .country-row {
@@ -98,7 +92,8 @@ section {
   background-color: green;
 }
 .container .form-body .country-list .country-row p {
-  font-weight: 500;
+  font-family: "CamptonBook-semibold";
+  font-weight: 475;
   font-size: 16px;
   line-height: 16px;
   color: #343434;
