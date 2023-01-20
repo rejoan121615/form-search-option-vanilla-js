@@ -57,7 +57,46 @@ section {
             justify-content: space-between;
             margin: 15px auto;
             .switch {
+                margin-right: 8px;
+            }
+            .select-controller {
+                display: flex;
+                align-items: center;
 
+                h6 {
+                    font-weight: 600;
+                    color: #232323;
+                }
+            }
+            p {
+                font-weight: 600;
+                color: #232323;
+            }
+        }
+        // country list
+        .country-list {
+            .country-row {
+                display: flex;
+                height: 22px;
+                margin-bottom: 15px;
+                input {
+                  background-color: #ECECEC;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 8px;
+                  &:checked {
+                    background-color: green;
+                  }
+                }
+                
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #343434;
+                    margin-left: 5px;
+                    text-transform: capitalize;
+                }
             }
         }
     }
@@ -122,4 +161,71 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+// custom checkbox 
+/* The container */
+.country-box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.country-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border-radius: 8px;
+  background-color: #ececec;
+}
+
+/* On mouse-over, add a grey background color */
+/* When the checkbox is checked, add a blue background */
+.country-box input:checked ~ .checkmark {
+  background-color: #457DF1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.country-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.country-box .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
